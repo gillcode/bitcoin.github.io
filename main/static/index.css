@@ -1,0 +1,90 @@
+body {
+    background-image: url("./Background_Main.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  /* Add styles to the form container */
+  .container {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    margin-right: 46%;
+    margin-top: 18%;
+    max-width: 200px;
+    padding: 6px;
+  }
+
+  label{
+    color: gray;
+    margin-left: 20px;
+  }
+  
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+    width: 145%;
+    padding: 10px;
+    margin: 5px 0 8px 0;
+    border: none;
+    background: rgb(34, 3, 86);
+    opacity: 0.4;
+    border-radius: 10px;
+    border: 2px solid wheat;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #04AA6D;
+    /* color: white; */
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn {
+    border: 2px solid black;
+    background: rgb(34, 3, 86);
+    padding: 20px 98px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  
+  a{
+    color: black;
+    display: flex;
+  }
+  /* Green */
+  .success {
+    border-radius: 10px;
+    border-color: #ffffff;
+    color: rgb(114, 101, 101);
+  }
+  
+  .success:hover {
+    background-color: #04AA6D;
+    color: white;
+  }

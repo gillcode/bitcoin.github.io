@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'index.css' %}">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <div class="centered">
+      <!-- {% for data in data %}
+      {% if data.d_id == request.user.id %}
+      <p
+        style=" margin-top: 20px;color: rgb(255, 196, 0); font-size: xx-large; background-color:  rgb(26, 22, 33); padding: 20px 35px 15px 15px; border: 2px solid rgb(111, 111, 111); opacity: 0.5; cursor: pointer;">
+        {{data.data_1}} $</p>
+      <p
+        style=" margin-top: 20px; color: rgb(255, 196, 0); font-size: xx-large; background-color: rgb(26, 22, 33); padding: 20px 35px 15px 15px; border: 2px solid rgb(111, 111, 111); opacity: 0.5; cursor: pointer;">
+        $ {{data.data_2}}</p>
+      {% endif %}
+      {% endfor %} -->
+
+      {% for frame in excel_data %}
+      {% if frame.0 == y %}
+      <p style=" margin-top: 20px;color: rgb(255, 196, 0); font-size: xx-large; background-color:  rgb(26, 22, 33); padding: 20px 30px 15px 15px; border: 2px solid rgb(111, 111, 111); opacity: 0.5;">{{frame.1}} $</p>
+      <p style=" margin-top: 20px; color: rgb(255, 196, 0); font-size: xx-large; background-color: rgb(26, 22, 33); padding: 20px 30px 15px 15px; border: 2px solid rgb(111, 111, 111); opacity: 0.5;">$ {{frame.2}}</p>
+      {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+</body>
+
+</html>
